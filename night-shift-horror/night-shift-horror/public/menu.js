@@ -1,0 +1,1 @@
+let skin=0;document.querySelectorAll('[data-skin]').forEach(b=>b.onclick=()=>skin=+b.dataset.skin);function go(mode){const name=document.querySelector('#name').value.trim()||'Player';location.href=`game.html?mode=${mode}&name=${encodeURIComponent(name)}&skin=${skin}`;}document.querySelector('#solo').onclick=()=>go('solo');document.querySelector('#multi').onclick=()=>go('multi');
